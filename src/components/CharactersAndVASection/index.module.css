@@ -1,0 +1,42 @@
+.characterList {
+  border-left: 1px solid #ebebeb;
+  padding: 5px;
+}
+.characterList img {
+  border: 1px solid #ebebeb;
+  width: 46px;
+  max-width: 20%;
+  height: 60px;
+  padding: 0px 5px;
+}
+
+.h3Character {
+  font-weight: 400;
+  margin: 0%;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  max-height: 66px;
+  width: 50%;
+}
+.leftContainer {
+  display: flex;
+  height: 100%;
+  max-height: 66px;
+  width: 50%;
+}
+
+.leftContainer img {
+  margin-right: 5px;
+}
+.rightContainer img {
+  margin-left: 5px;
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+}

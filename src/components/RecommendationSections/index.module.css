@@ -1,0 +1,77 @@
+.contentContainer {
+  display: flex;
+  height: 140px;
+  margin-top: 5px;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  display: flex;
+  width: 90%;
+}
+.sliderContainer .img {
+  width: 90px;
+  height: 100%;
+  background-color: lightblue;
+  margin-right: 5px;
+}
+
+.contentContainer:hover .sliderLeftButtonContainer .sliderLeftButton {
+  opacity: 1;
+  margin-left: 0px;
+}
+.contentContainer:hover .sliderRightButtonContainer .sliderRightButton {
+  opacity: 1;
+  margin-left: 675px;
+}
+
+.sliderButtonContainer {
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 140px;
+}
+
+.sliderButton {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+
+.sliderLeftButton {
+  background-color: lightblue;
+  margin-left: -40px;
+}
+
+.sliderRightButton {
+  background-color: lightblue;
+  margin-left: 715px;
+}
+
+.viewAllBtn {
+  color: #1d439b;
+  height: 100%;
+  width: 10%;
+  min-width: 90px;
+  margin-left: 5px;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 89px;
+  height: 140px;
+  margin-right: 10px;
+  border: 1px solid black;
+  transition-duration: 0.3s;
+}
+.recommendation span {
+  font-size: 11px;
+  font-family: Avenir, lucida grande, tahoma, verdana, arial, sans-serif;
+  background-color: black;
+  color: white;
+}

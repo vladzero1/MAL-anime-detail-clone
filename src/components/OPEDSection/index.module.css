@@ -1,0 +1,22 @@
+.songsContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.songDescriptionContainer {
+  display: flex;
+  width: 100%;
+}
+
+.songDescriptionContainer span {
+  width: 80%;
+  font: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.songDescriptionContainer button {
+  width: 10%;
+}

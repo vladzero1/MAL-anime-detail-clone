@@ -1,0 +1,68 @@
+.header-container{
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container img{
+  height: 36px;
+}
+
+.mal-icon{
+  width: 190px;
+}
+
+.banner-header{
+  width: 250px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  width: 318px;
+  height: 26px;
+}
+
+.button-container button{
+  height: 100%;
+  font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  padding:  4px 0;
+  border:#2e51a2 2px solid;;
+}
+
+#hide-ads-button{
+  width: 114px;
+  background-color: #eb6100;
+  border-color: #eb6100;
+  color: #ffffff;
+}
+#hide-ads-button:hover{
+  opacity: 0.8;
+}
+
+#login-button{
+  width: 94px;
+  background-color: #ffffff;
+  /* border-color: #1d439b; */
+  color: #1d439b;
+}
+#login-button:hover{
+  background-color: #e1e7f5;
+}
+
+#sign-up-button{
+  width: 94px;
+  background-color: #1d439b;
+  /* border-color: #ffffff; */
+  color: #ffffff;
+}
+#sign-up-button:hover{
+  background-color: #5a79c1;
+  border:solid 2px #5a79c1;
+}
+
+

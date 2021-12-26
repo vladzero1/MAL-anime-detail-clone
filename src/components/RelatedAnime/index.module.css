@@ -1,0 +1,26 @@
+.relatedAnimeContainer {
+  display: flex;
+  flex-direction: column;
+}
+.relatedAnimeContainer span {
+  border: 1px solid #ebebeb;
+  padding: 3px;
+}
+
+.relatedAnimeList {
+  display: flex;
+}
+.relatedAnimeList span {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  width: 70px;
+  border: none;
+}
+.relatedAnimeList .a {
+  padding: 3px;
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  color: #1d439b;
+}

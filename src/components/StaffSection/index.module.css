@@ -1,0 +1,30 @@
+.staffList {
+  border-left: 1px solid #ebebeb;
+  padding: 5px;
+}
+.staffList img {
+  border: 1px solid #ebebeb;
+  width: 46px;
+  max-width: 20%;
+  height: 60px;
+  padding: 0px 5px;
+}
+.rowContainer {
+  display: flex;
+  height: 100%;
+  max-height: 66px;
+  width: 100%;
+}
+.rowContainer img {
+  width: 20%;
+  max-width: 46px;
+}
+.rowContainer div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+.h3 {
+  font-weight: 400;
+  margin: 0%;
+}

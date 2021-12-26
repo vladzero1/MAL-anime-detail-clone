@@ -1,0 +1,53 @@
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+
+.reviewDetailContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+  padding: 5px 0px;
+}
+
+.rightReviewDetail {
+  display: flex;
+  flex-direction: column;
+}
+.rightReviewDetail span{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0px;
+}
+.leftReviewDetail {
+  display: flex;
+}
+.leftReviewDetail img {
+  height: 83px;
+  width: 52;
+  margin-right: 5px;
+  border: 1px solid #ebebeb;
+}
+
+.profileDataContainer{
+  width: 60%;
+  height: 100%;
+}
+
+.profileDataContainer div{
+  padding: 5px 0px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid #ebebeb;
+  padding: 5px 0px;
+}
+.buttonsContainer button {
+  border: none;
+  color: #888888;
+  background-color: #ffffff;
+}

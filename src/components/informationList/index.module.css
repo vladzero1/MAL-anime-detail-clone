@@ -1,0 +1,16 @@
+.informationContainer {
+  padding: 3px 0px;
+}
+
+.informationContainer span{
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+.informationContainer a{
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+
+.contentName {
+  font-weight: bold;
+}

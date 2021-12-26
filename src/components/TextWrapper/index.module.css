@@ -1,0 +1,4 @@
+.unremovedSpaceBox {
+  display: flex;
+  white-space: pre-wrap;
+}

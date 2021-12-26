@@ -1,0 +1,9 @@
+.button {
+  border: none;
+  color: #1d439b;
+  background-color: transparent;
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: underline;
+}

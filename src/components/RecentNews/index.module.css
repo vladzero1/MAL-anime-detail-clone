@@ -1,0 +1,27 @@
+.newsContainer {
+  display: flex;
+  border-bottom: 3px solid #ebebeb;
+  padding: 5px 0px;
+}
+.newsDetailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.newsDetailContainer span {
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+.newsDetailContainer p {
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+.newsDetailContainer a {
+  color: #1d439b;
+  font-size: 11px;
+  font-family: Verdana, Arial;
+}
+.timeText{
+  color: #888888;
+}

@@ -1,0 +1,9 @@
+.snsContainer {
+  display: flex;
+  margin-top: 5px;
+}
+.snsContainer img {
+  width: 33px;
+  height: 33px;
+  margin-right: 13px;
+}
