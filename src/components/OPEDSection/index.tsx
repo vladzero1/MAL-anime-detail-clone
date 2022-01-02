@@ -3,14 +3,17 @@ import { SongData } from "../../types";
 import { ContentHeader } from "../ContentHeader";
 import styles from "./index.module.css";
 
-interface OPEDSectionProps {
+export interface OPEDSectionProps {
   type: "Opening" | "Ending";
   songsList: SongData[];
 }
 
-const OPEDSection: React.FC<OPEDSectionProps> = ({ type, songsList }) => {
+const OPEDSection: React.FC<OPEDSectionProps> = ({
+  type,
+  songsList,
+}): JSX.Element => {
   return (
-    <div>
+    <>
       <ContentHeader text={`${type} Theme`} buttonText={"Edit"}></ContentHeader>
       <div className={styles.songsContainer}>
         {songsList.map(({ episode, singer, title }) => {
@@ -28,7 +31,7 @@ const OPEDSection: React.FC<OPEDSectionProps> = ({ type, songsList }) => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

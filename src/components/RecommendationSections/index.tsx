@@ -8,11 +8,11 @@ const translateStyle = (page: number) => {
   return styles;
 };
 
-interface RecommendationsSectionsProps {
+export interface RecommendationSectionsProps {
   recommendationList: Recommendation[];
 }
 
-const RecommendationsSections: React.FC<RecommendationsSectionsProps> = ({
+const RecommendationsSections: React.FC<RecommendationSectionsProps> = ({
   recommendationList,
 }) => {
   const [page, setPage] = useState(0);

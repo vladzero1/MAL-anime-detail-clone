@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Button } from "../../components/Button";
 import { ContentHeader } from "../../components/ContentHeader";
 import { ImageCard } from "../../components/ImageCard";
@@ -33,19 +33,14 @@ import { BreadcrumbsNav } from "../../components/BreadcrumbsNav";
 import { CharactersAndVASection } from "../../components/CharactersAndVASection";
 import { StaffSection } from "../../components/StaffSection";
 import { ReviewsSection } from "../../components/ReviewsSection";
-import RecentForum from "../../components/RecentForum";
+import LazyOPEDSection from "../../components/OPEDSection/Lazy";
+import LazyRecentNews from "../../components/RecentNews/Lazy";
+import LazyRecommendationSections from "../../components/RecommendationSections/Lazy";
+import LazyRecentForum from "../../components/RecentForum/Lazy";
+import LazyFeaturedArticles from "../../components/FeaturedArticles/Lazy";
 interface AnimeDetailProps {
   title: string;
 }
-
-const RecommendationsSections = React.lazy(
-  () => import("../../components/RecommendationSections")
-);
-const OPEDSection = React.lazy(() => import("../../components/OPEDSection"));
-const RecentNews = React.lazy(() => import("../../components/RecentNews"));
-const FeaturedArticles = React.lazy(
-  () => import("../../components/FeaturedArticles")
-);
 
 export const AnimeDetail: React.FC<AnimeDetailProps> = ({ title }) => (
   <Layout>
@@ -193,21 +188,19 @@ export const AnimeDetail: React.FC<AnimeDetailProps> = ({ title }) => (
           <StaffSection staff={staffList} />
 
           <ReviewsSection reviews={reviewsList} totalEpisode={12} />
-          <Suspense fallback={<>loading...</>}>
-            <div className={styles.flex}>
-              <div style={{ width: "50%", paddingRight: "5px" }}>
-                <OPEDSection type={"Opening"} songsList={openingThemeList} />
-              </div>
-              <div style={{ width: "50%", paddingLeft: "5px" }}>
-                <OPEDSection type={"Ending"} songsList={endingThemeList} />
-              </div>
+          <div className={styles.flex}>
+            <div style={{ width: "50%", paddingRight: "5px" }}>
+              <LazyOPEDSection type={"Opening"} songsList={openingThemeList} />
             </div>
+            <div style={{ width: "50%", paddingLeft: "5px" }}>
+              <LazyOPEDSection type={"Ending"} songsList={endingThemeList} />
+            </div>
+          </div>
+          <LazyRecentNews news={recentNewsList} />
+          <LazyRecommendationSections recommendationList={recommendationList} />
+          <LazyRecentForum dataList={forumDiscussionsList} />
 
-            <RecentNews news={recentNewsList} />
-            <RecommendationsSections recommendationList={recommendationList} />
-            <RecentForum dataList={forumDiscussionsList} />
-            <FeaturedArticles articles={featuredArticlesList} />
-          </Suspense>
+          <LazyFeaturedArticles articles={featuredArticlesList} />
         </div>
       </div>
     </div>

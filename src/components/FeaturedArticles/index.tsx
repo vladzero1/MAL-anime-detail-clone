@@ -4,7 +4,7 @@ import { ContentHeader } from "../ContentHeader";
 import { TextWrapper } from "../TextWrapper";
 import styles from "./index.module.css";
 
-interface FeaturedArticlesProps {
+export interface FeaturedArticlesProps {
   articles: FeaturedArticle[];
 }
 
@@ -21,7 +21,11 @@ const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ articles }) => {
             return (
               <div className={styles.articleContainer} key={index}>
                 <a href={title.link}>
-                  <img src={image} className={styles.articleImage} alt="article" />
+                  <img
+                    src={image}
+                    className={styles.articleImage}
+                    alt="article"
+                  />
                 </a>
                 <div className={styles.articleDetail}>
                   <a href={title.link}>{title.description}</a>

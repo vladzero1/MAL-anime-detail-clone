@@ -3,7 +3,7 @@ import { monthNumtoString, time24Hourto12Hour } from "../../helper/dateHelper";
 import { News } from "../../types";
 import { ContentHeader } from "../ContentHeader";
 import styles from "./index.module.css";
-interface RecentNewsProps {
+export interface RecentNewsProps {
   news: News[];
 }
 

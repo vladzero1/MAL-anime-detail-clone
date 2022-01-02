@@ -4,7 +4,7 @@ import { ForumDiscussions } from "../../types";
 import { ContentHeader } from "../ContentHeader";
 import { TextWrapper } from "../TextWrapper";
 import styles from "./index.module.css";
-interface RecentForumProps {
+export interface RecentForumProps {
   dataList: ForumDiscussions[];
 }
 
@@ -28,10 +28,7 @@ const RecentForum: React.FC<RecentForumProps> = ({ dataList }) => {
         return (
           <div className={styles.forumContentContainer} key={title}>
             <div className={styles.discussionImageContainer}>
-              <img
-                alt="a"
-                className={styles.forumImage}
-              />
+              <img alt="a" className={styles.forumImage} />
             </div>
             <div className={styles.forumDescriptionContainer}>
               <TextWrapper>
