@@ -12,6 +12,11 @@ const IOLazyLoad: React.FC<IOLazyLoadProps> = ({
 }): JSX.Element => {
   const [isLoaded, setIsLoaded] = useState(false);
   const containerRef = useRef<any>(null);
+  const cleanup = (observer: IntersectionObserver) => {
+    if (containerRef.current) {
+      observer.unobserve(containerRef.current);
+    }
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -22,11 +27,7 @@ const IOLazyLoad: React.FC<IOLazyLoadProps> = ({
       observer.observe(containerRef.current);
     }
 
-    return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
-      }
-    };
+    return cleanup(observer);
   }, [containerRef]);
 
   if (isLoaded) {
